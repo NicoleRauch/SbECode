@@ -1,0 +1,66 @@
+---
+Static
+---
+!1 Es gibt einen Bestellschluss
+
+Die Uhrzeit, ab der nicht mehr bestellt wird, heisst Bestellschluss. Der Bestellschluss ist an jedem Tag gleich.
+
+|Der Bestellschluss|
+|ist um?           |
+|16:00             |
+
+!1 Es gibt einen Mindestbestand, der vom Wochentag abhängig ist
+
+Der Mindestbestand ist an jedem Tag gleich, außer am Dienstag. Damit wird der dienstags üblicherweise höhere Umsatz berücksichtigt.
+
+|Der Mindestbestand|
+|beträgt am |Stück?|
+|Montag     |10    |
+|Dienstag   |20    |
+|Freitag    |10    |
+|Sonntag    |10    |
+
+!1 Nach Unterschreiten des Mindestbestandes wird bestellt
+
+Sind genauso viele oder weniger Hot Dogs im Bestand als der Mindestbestand vorgibt, wird potentiell bestellt.
+
+|Bei einem Mindestbestand von   |15                       |
+|und einem aktuellen Bestand von|wird potentiell bestellt?|
+|16                             |nein                     |
+|15                             |ja                       |
+|14                             |ja                       |
+
+!1 Nach Bestellschluss wird niemals bestellt
+
+Nach Bestellschluss wird niemals bestellt.
+
+|Bei einem Bestellschluss von|18:00                    |
+|und der aktuellen Uhrzeit   |wird potentiell bestellt?|
+|17:59                       |ja                       |
+|18:00                       |nein                     |
+|18:01                       |nein                     |
+
+!1 Bestellstatus
+
+Wurde bereits eine Bestellung verschickt, wird nicht noch einmal bestellt.
+
+|Der Bestellstatus                                               |
+|wenn Bestellung bereits versandt wurde|wird potentiell bestellt?|
+|nein                                  |ja                       |
+|ja                                    |nein                     |
+
+!1 Ausführung der Bestellung
+
+Die Bestellung wird ausgeführt, wenn
+ * der Mindestbestand unterschritten wurde
+ * der Bestellschluss noch nicht erreicht wurde
+ * die Bestellung noch nicht versandt wurde.
+
+|Ausführung der Bestellung                                                                                     |
+|Mindestbestand ist unterschritten|Bestellschluss ist schon erreicht|Bestellung bereits versandt|wird bestellt?|
+|nein                             |ja                               |nein                       |nein          |
+|ja                               |ja                               |nein                       |nein          |
+|nein                             |nein                             |nein                       |nein          |
+|ja                               |nein                             |nein                       |ja            |
+|ja                               |nein                             |ja                         |nein          |
+
