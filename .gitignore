@@ -1,10 +1,13 @@
+FitNesse/FitNesseRoot/content.txt
+FitNesse/FitNesseRoot/files
 FitNesse/FitNesseRoot/FitNesse
-content.txt
 FitNesse/FitNesseRoot/PageFooter
 FitNesse/FitNesseRoot/PageHeader
 FitNesse/FitNesseRoot/PlugIns
+FitNesse/FitNesseRoot/properties
+FitNesse/FitNesseRoot/properties.xml
+FitNesse/FitNesseRoot/RecentChanges.wiki
 FitNesse/FitNesseRoot/TemplateLibrary
 .idea
 *.zip
 **/RerunLastFailures*
-FitNesse/FitNesseRoot/files
