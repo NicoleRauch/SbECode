@@ -16,7 +16,7 @@ public class BeiEinemBestellschlussVon {
 
 	public BeiEinemBestellschlussVon(String bestellschluss) {
 		this.bestellschluss = new Bestellschluss() {
-			public LocalTime bestellschluss() { return LocalTime.parse(bestellschluss); };
+		public LocalTime bestellschluss() { return LocalTime.parse(bestellschluss); };
 		};
 	}
 	

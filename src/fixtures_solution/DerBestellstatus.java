@@ -8,8 +8,8 @@ import hotdog.Mindestbestand;
 
 public class DerBestellstatus {
 
-	private final static int VORHANDENE_MENGE = 1;
-	private final static int MINDESTBESTAND = 10;
+	private static final int VORHANDENE_MENGE = 1;
+	private static final int MINDESTBESTAND = 10;
 	private static final LocalTime AKTUELLE_UHRZEIT = LocalTime.now();
 	private static final LocalTime BESTELLSCHLUSS = LocalTime.now().plusHours(1);
 
@@ -20,9 +20,7 @@ public class DerBestellstatus {
 	}
 	
 	public void setWennBestellungBereitsVersandtWurde(Boolean versandt) {
-		if(versandt) {
-			bestellung.versendeBestellung();
-		}
+		if(versandt) { bestellung.versendeBestellung(); }
 	}
 	
 	public Boolean wirdPotentiellBestellt() {
