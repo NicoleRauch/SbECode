@@ -11,3 +11,4 @@ FitNesse/FitNesseRoot/TemplateLibrary
 .idea
 *.zip
 **/RerunLastFailures*
+*.class
