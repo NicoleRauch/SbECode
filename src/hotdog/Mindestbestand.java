@@ -1,7 +1,6 @@
 package hotdog;
 
 public class Mindestbestand {
-	
 	public int mindestbestandFuer(String wochentag) {
 		if (wochentag.toLowerCase().equals("dienstag")) {
 			return 20;

@@ -25,10 +25,7 @@ public class BeiEinemMindestbestandVon {
 	}
 	
 	public Boolean wirdPotentiellBestellt() {
-		return new Bestellung(mindestbestand, bestellschluss).wirdBestellt(aktuellerBestand, AKTUELLE_UHRZEIT, "montag");
+		return new Bestellung(mindestbestand, new Bestellschluss(BESTELLSCHLUSS))
+				.wirdBestellt(aktuellerBestand, AKTUELLE_UHRZEIT, "montag");
 	}
-
-	private final static Bestellschluss bestellschluss = new Bestellschluss() {
-		public LocalTime bestellschluss() { return BESTELLSCHLUSS; };
-	};
 }

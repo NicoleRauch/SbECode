@@ -16,7 +16,7 @@ public class DerBestellstatus {
 	private Bestellung bestellung;
 
 	public void reset() {
-		bestellung = new Bestellung(mindestbestand, bestellschluss);
+		bestellung = new Bestellung(mindestbestand, new Bestellschluss(BESTELLSCHLUSS));
 	}
 	
 	public void setWennBestellungBereitsVersandtWurde(Boolean versandt) {
@@ -29,9 +29,5 @@ public class DerBestellstatus {
 	
 	private final static Mindestbestand mindestbestand = new Mindestbestand() {
 		public int mindestbestandFuer(String wochentag) { return MINDESTBESTAND; }
-	};
-
-	private final static Bestellschluss bestellschluss = new Bestellschluss() {
-		public LocalTime bestellschluss() { return BESTELLSCHLUSS; };
 	};
 }

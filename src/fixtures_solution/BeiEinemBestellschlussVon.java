@@ -15,9 +15,7 @@ public class BeiEinemBestellschlussVon {
 	private Bestellschluss bestellschluss;
 
 	public BeiEinemBestellschlussVon(String bestellschluss) {
-		this.bestellschluss = new Bestellschluss() {
-		public LocalTime bestellschluss() { return LocalTime.parse(bestellschluss); };
-		};
+		this.bestellschluss = new Bestellschluss(LocalTime.parse(bestellschluss));
 	}
 	
 	public void setUndDerAktuellenUhrzeit(String uhrzeit){
