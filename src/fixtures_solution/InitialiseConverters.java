@@ -1,8 +1,10 @@
 package fixtures_solution;
 
+import fitnesse.slim.converters.ConverterRegistry;
+
 public class InitialiseConverters {
 	static {
-		fitnesse.slim.converters.ConverterRegistry.addConverter(boolean.class, new BooleanConverter());
-		fitnesse.slim.converters.ConverterRegistry.addConverter(Boolean.class, new BooleanConverter());
+		ConverterRegistry.addConverter(boolean.class, new BooleanConverter());
+		ConverterRegistry.addConverter(Boolean.class, new BooleanConverter());
 	}
 }
