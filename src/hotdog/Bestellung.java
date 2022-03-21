@@ -22,5 +22,4 @@ public class Bestellung {
 				&& vorhandeneMenge <= mindestbestand.mindestbestandFuer(wochentag)
 				&& !bestellungUnterwegs;
 	}
-
 }
