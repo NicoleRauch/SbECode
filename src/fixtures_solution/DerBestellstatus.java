@@ -16,7 +16,7 @@ public class DerBestellstatus {
 	private Bestellung bestellung;
 
 	public void reset() {
-		bestellung = new Bestellung(mindestbestand, new Bestellschluss(BESTELLSCHLUSS));
+		bestellung = new Bestellung(mindestbestand,new Bestellschluss(BESTELLSCHLUSS));
 	}
 	
 	public void setWennBestellungBereitsVersandtWurde(Boolean versandt) {

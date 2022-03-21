@@ -14,21 +14,20 @@ public class AusführungDerBestellung {
 	private Bestellung bestellung;
 
 	public void reset() {
-		bestellung = new Bestellung(mindestbestand, new Bestellschluss(BESTELLSCHLUSS));
+		bestellung = new Bestellung(mindestbestand,new Bestellschluss(BESTELLSCHLUSS));
 	}
 	
 	public void setMindestbestandIstUnterschritten(Boolean unterschritten){
-		vorhandeneMenge = unterschritten ? MINDESTBESTAND - 5 : MINDESTBESTAND + 5;}
+		vorhandeneMenge = unterschritten ? MINDESTBESTAND - 5 : MINDESTBESTAND + 5; }
 	
 	public void setBestellschlussIstSchonErreicht(Boolean erreicht){
-		aktuelleUhrzeit = erreicht ? BESTELLSCHLUSS.plusHours(1) : BESTELLSCHLUSS.minusHours(1);}
+		aktuelleUhrzeit = erreicht ? BESTELLSCHLUSS.plusHours(1) : BESTELLSCHLUSS.minusHours(1); }
 	
 	public void setBestellungBereitsVersandt(Boolean versandt){
-		if(versandt) { bestellung.versendeBestellung(); }}
+		if(versandt) { bestellung.versendeBestellung(); } }
 	
 	public Boolean wirdBestellt(){
-		return bestellung.wirdBestellt(vorhandeneMenge, aktuelleUhrzeit, "montag");
-	}
+		return bestellung.wirdBestellt(vorhandeneMenge, aktuelleUhrzeit, "montag"); }
 	
 	private final static Mindestbestand mindestbestand = new Mindestbestand() {
 		public int mindestbestandFuer(String wochentag) { return MINDESTBESTAND; }
