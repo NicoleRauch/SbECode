@@ -10,8 +10,8 @@ public class DerBestellstatus {
 
 	private static final int VORHANDENE_MENGE = 1;
 	private static final int MINDESTBESTAND = 10;
-	private static final LocalTime AKTUELLE_UHRZEIT = LocalTime.now();
-	private static final LocalTime BESTELLSCHLUSS = LocalTime.now().plusHours(1);
+	private static final LocalTime AKTUELLE_UHRZEIT = LocalTime.of(13, 0);
+	private static final LocalTime BESTELLSCHLUSS = LocalTime.of(14, 0);
 
 	private Bestellung bestellung;
 
