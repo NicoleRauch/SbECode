@@ -58,9 +58,12 @@ Die Bestellung wird ausgeführt, wenn
 
 |Ausführung der Bestellung                                                                                     |
 |Mindestbestand ist unterschritten|Bestellschluss ist schon erreicht|Bestellung bereits versandt|wird bestellt?|
-|nein                             |ja                               |nein                       |nein          |
-|ja                               |ja                               |nein                       |nein          |
 |nein                             |nein                             |nein                       |nein          |
+|nein                             |nein                             |ja                         |nein          |
+|nein                             |ja                               |nein                       |nein          |
+|nein                             |ja                               |ja                         |nein          |
 |ja                               |nein                             |nein                       |ja            |
 |ja                               |nein                             |ja                         |nein          |
+|ja                               |ja                               |nein                       |nein          |
+|ja                               |ja                               |ja                         |nein          |
 
