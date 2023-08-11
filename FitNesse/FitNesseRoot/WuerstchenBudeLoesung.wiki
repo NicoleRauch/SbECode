@@ -23,7 +23,9 @@ Der Mindestbestand ist an jedem Tag gleich, außer am Dienstag. Damit wird der d
 |Montag     |10    |
 |Dienstag   |20    |
 |Mittwoch   |10    |
+|Donnerstag |10    |
 |Freitag    |10    |
+|Samstag    |10    |
 |Sonntag    |10    |
 
 !1 Nach Erreichen des Mindestbestandes wird bestellt
