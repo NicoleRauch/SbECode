@@ -5,8 +5,8 @@ import java.time.LocalTime;
 public class Bestellung {
 
 	private boolean bestellungUnterwegs;
-	private Mindestbestand mindestbestand;
-	private Bestellschluss bestellschluss;
+	private final Mindestbestand mindestbestand;
+	private final Bestellschluss bestellschluss;
 
 	public Bestellung(Mindestbestand mindestbestand, Bestellschluss bestellschluss) {
 		this.mindestbestand = mindestbestand;

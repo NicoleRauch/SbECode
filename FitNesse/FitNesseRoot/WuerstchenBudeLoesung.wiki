@@ -22,10 +22,11 @@ Der Mindestbestand ist an jedem Tag gleich, außer am Dienstag. Damit wird der d
 |beträgt am |Stück?|
 |Montag     |10    |
 |Dienstag   |20    |
+|Mittwoch   |10    |
 |Freitag    |10    |
 |Sonntag    |10    |
 
-!1 Nach Unterschreiten des Mindestbestandes wird bestellt
+!1 Nach Erreichen des Mindestbestandes wird bestellt
 
 Sind genauso viele oder weniger Hot Dogs im Bestand als der Mindestbestand vorgibt, wird potentiell bestellt.
 
